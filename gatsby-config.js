@@ -1,24 +1,12 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Blog",
+    title: "Blog Nurhuda Joantama Putra",
+    author: "Nurhuda Joantama Putra",
   },
   plugins: [
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "pages",
-        path: `${__dirname}/src/pages/`,
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "styles",
-        path: `${__dirname}/src/stles/`,
-      },
-    },
+    "gatsby-plugin-netlify-cms",
     {
       resolve: "gatsby-source-filesystem",
       options: {
