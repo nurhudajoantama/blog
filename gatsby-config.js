@@ -7,7 +7,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-postcss",
     "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [`.md`, `.mdx`],
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
