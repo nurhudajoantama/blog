@@ -13,12 +13,25 @@ module.exports = {
         extensions: [`.md`, `.mdx`],
       },
     },
-    ,
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: `${__dirname}/src/pages/blog`,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/src/pages`,
+        ignore: [`blog.(js|ts)?(x)`],
       },
     },
     {
