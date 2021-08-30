@@ -38,14 +38,7 @@ module.exports = {
 
     //Image
     "gatsby-plugin-image",
-    {
-      name: "gatsby-plugin-sharp",
-      options: {
-        defaults: {
-          placeholder: "BLURRED",
-        },
-      },
-    },
+    "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
 
     // generate page
