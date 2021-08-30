@@ -24,13 +24,14 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: `${__dirname}/src/pages`,
+        path: `${__dirname}/src/pages/blog`,
       },
     },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/pages`,
+        ignore: [`blog.(js|ts)?(x)`],
       },
     },
     {
