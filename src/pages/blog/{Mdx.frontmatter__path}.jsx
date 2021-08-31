@@ -11,11 +11,11 @@ export default class Component extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div style={{ maxWidth: "500px" }}>
         <h1>{this.frontmatter.title}</h1>
         <div>{this.frontmatter.path}</div>
         <div>{this.frontmatter.date}</div>
-        <MDXProvider>
+        <MDXProvider components={{}}>
           <MDXRenderer>{this.blog.body}</MDXRenderer>
         </MDXProvider>
       </div>
@@ -32,7 +32,6 @@ export const query = graphql`
         title
       }
       body
-      rawBody
     }
   }
 `;
