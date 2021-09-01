@@ -13,6 +13,9 @@ module.exports = {
       },
     },
     extend: {
+      maxWidth: {
+        "1/3": "33.3%",
+      },
       fontFamily: {
         sans: ["DM sans", "sans-serif"],
         body: ["DM sans", "sans-serif"],

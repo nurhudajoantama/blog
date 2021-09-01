@@ -2,7 +2,7 @@ module.exports = {
   // for data helmet, etc
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Blog Nurhuda Joantama Putra",
+    title: "Nurhuda Joantama Putra Site",
     author: "Nurhuda Joantama Putra",
   },
   plugins: [

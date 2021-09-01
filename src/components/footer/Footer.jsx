@@ -3,7 +3,7 @@ import SocialMediaFooter from "./SocialMediaFooter";
 
 export default function Footer() {
   return (
-    <div className="bg-blue-700 min-h-1/3 py-10 mt-3">
+    <div className="bg-blue-700 min-h-1/3 py-10 mt-7">
       <div className="container">
         <SocialMediaFooter />
         <div className="my-10 py-7">

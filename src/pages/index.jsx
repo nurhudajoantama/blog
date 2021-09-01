@@ -1,24 +1,15 @@
 import React from "react";
-import { graphql } from "gatsby";
-import BodyLatestBlog from "../components/home/latestblog/BodyLatestBlog";
+import BodyLatestBlog from "../components/home/LatestBlog";
 import IndexHeader from "../components/home/header/IndexHeader";
 import Footer from "../components/footer/Footer";
+import BodyLayout from "../components/layout/BodyLayout";
 
 export default function index() {
   return (
-    <div className="h-full bg-gray-100 min-w-min min-h-screen">
+    <BodyLayout>
       <IndexHeader />
       <BodyLatestBlog />
       <Footer />
-    </div>
+    </BodyLayout>
   );
 }
-export const query = graphql`
-  query HomePageQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`;

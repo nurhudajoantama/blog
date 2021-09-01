@@ -30,17 +30,12 @@ function ResponsiveNavbar() {
   return (
     <>
       <NavbarHamburger isNavbarOpen={isNavbarOpen} navbarClick={navbarClick} />
-      <div
-        className={
-          "flex flex-col fixed h-full min-w-min w-2/3 md:w-1/2 left-0 top-0 bg-white shadow-md py-5 pr-7 pl-2 z-50 transition duration-150 ease-out transform " +
-          (isNavbarOpen ? "" : "-translate-x-full")
-        }
-      >
+      <div className={"flex-col fixed h-full min-w-min w-2/3 md:w-1/2 left-0 top-0 bg-white shadow-md py-10 pr-7 pl-2 z-50 overflow-auto" + (isNavbarOpen ? " flex" : " hidden")}>
         {navbarLinks.map((navbarLink, index) => (
           <Link
             key={index}
             to={navbarLink.to}
-            className="text-blue:500 text-lg tracking-wide mx-1 py-3 px-3 border-l-8 border-blue-800 border-opacity-0 hover:border-opacity-100 hover:bg-gray-300 active:bg-gray-300 transition duration-150 ease-out"
+            className="text-blue:500 text-lg tracking-wid mx-2 py-4 px-3 border-l-8 border-blue-800 border-opacity-0 hover:border-opacity-100 hover:bg-gray-300 active:bg-gray-300 transition duration-150 ease-out"
           >
             {navbarLink.name}
           </Link>
@@ -53,7 +48,7 @@ function ResponsiveNavbar() {
 export default function Navbar() {
   return (
     <div className="container">
-      <div className="flex items-center justify-between p-5">
+      <div className="flex items-center justify-between py-7">
         <div>
           <Link to="/" className="text-white text-2xl">
             Nurhuda Joantama
