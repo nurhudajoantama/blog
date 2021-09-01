@@ -1,6 +1,7 @@
 ---
 path: dummy
 date: 2021-08-29T13:31:54.913Z
+thumbnail: images/default.png
 title: dummy
 ---
 

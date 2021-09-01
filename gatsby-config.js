@@ -53,7 +53,7 @@ module.exports = {
       resolve: "gatsby-plugin-page-creator",
       options: {
         path: `${__dirname}/src/pages`,
-        ignore: [`blog.(js|ts)?(x)`],
+        ignore: [`blog/index.(js|ts)?(x)`],
       },
     },
 
