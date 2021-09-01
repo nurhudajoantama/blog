@@ -1,6 +1,6 @@
 import React from "react";
 import BodyLatestBlog from "../components/home/LatestBlog";
-import IndexHeader from "../components/home/header/IndexHeader";
+import IndexHeader from "../components/home/IndexHeader";
 import Footer from "../components/footer/Footer";
 import BodyLayout from "../components/layout/BodyLayout";
 

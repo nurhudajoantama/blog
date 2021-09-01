@@ -1,6 +1,7 @@
 import React from "react";
+import Navbar from "../header/Navbar";
 
-export default function Quote() {
+function Quote() {
   return (
     <div className="bg-gray-50 mt-5 border-l-8 border-blue-300 p-5 mx-auto max-w-screen-sm mb-7">
       <div>
@@ -13,6 +14,15 @@ export default function Quote() {
         Yang penting terus berusaha.
       </p>
       <div>- Unknown</div>
+    </div>
+  );
+}
+
+export default function IndexHeader() {
+  return (
+    <div className="w-full bg-blue-700 pb-10">
+      <Navbar />
+      <Quote />
     </div>
   );
 }
