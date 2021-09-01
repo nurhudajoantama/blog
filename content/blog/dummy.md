@@ -10,7 +10,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi qui dignissimos 
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi qui dignissimos nemo labore minima eum nam natus, beatae nulla, molestiae similique ducimus dicta officiis aperiam. Nam adipisci sunt quas optio.
 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi qui dignissimos nemo labore minima eum nam natus, beatae nulla, molestiae similique ducimus dicta officiis aperiam. Nam adipisci sunt quas optio.
 
-```[bash]
+```bash
 git init
 git add .
 git commit -m

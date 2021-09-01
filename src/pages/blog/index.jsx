@@ -45,11 +45,11 @@ export default function blog() {
         <ContentContainerLayout title="Blog">
           {dummyBlogs.map((blog, index) => (
             <Link to={blog.path} key={index}>
-              <div className="my-10 md:my-7 flex flex-col md:flex-row border rounded overflow-hidden">
-                <div className="max-h-32 md:max-w-1/3 md:max-h-full bg-gray-600 overflow-hidden">
-                  <img className="object-center object-cover h-auto w-full md:h-full md:w-auto" src="/assets/screenshot-271-.png" alt="test" />
+              <div className="my-10 border rounded overflow-hidden transform hover:-translate-y-0.5 hover:shadow-md">
+                <div className="max-h-32 bg-gray-600 overflow-hidden">
+                  {index !== 1 ? <img className="object-center object-cover h-auto w-full " src="/assets/screenshot-271-.png" alt="test" /> : ""}
                 </div>
-                <div className="p-3">
+                <div className="mx-2 p-3">
                   <div to={blog.path} className="font-semibold text-lg hover:underline mb-1">
                     {blog.title}
                   </div>

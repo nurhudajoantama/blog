@@ -24,6 +24,7 @@ module.exports = {
   },
   variants: {
     extend: {
+      scale: ["hover"],
       borderOpacity: ["hover", "active"],
       textDecoration: ["hover"],
       background: ["hover", "active"],
