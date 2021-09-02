@@ -4,14 +4,52 @@ title: coba
 thumbnail: ""
 date: 2021-08-30T15:49:40.939Z
 ---
+> quote
 
-<!-- import {StaticImage} from 'gatsby-plugin-image' -->
+# test
+
+## test
+
+### test
+
+#### test
+
+##### test
+
+###### test
 
 coba lah
 
+ul
+
+* 1
+* 2
+* 3
+
+  * 4
+* 5
+
+  * 6
+* praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
+  ipsa incidunt maiores asperiores aspernatur? Iste id nesciunt dolores vitae provident aperiam error repellat sunt eius voluptates ab, autem dolorem non laboriosam veniam nulla. Numquam
+
+
+
+1. 1
+2. 2
+3. 2
+
+   1. 3
+
+      1. 4
+4. 5
+5. 6
+6. praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
+   ipsa incidunt maiores asperiores aspernatur? Iste id nesciunt dolores vitae provident aperiam error repellat sunt eius voluptates ab, autem dolorem non laboriosam veniam nulla. Numquam
+
 ![coba](/assets/screenshot-271-.png "coba")
 
-Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil amet excepturi quam ut eveniet, dolores veritatis tenetur earum, laboriosam, tempore sequi eius. Iusto temporibus,
+**Lorem** ipsum *dolor* sit, amet consectetur adipisicing elit. Nihil amet excepturi quam ut eveniet, dolores veritatis tenetur earum, laboriosam, tempore sequi eius. Iusto temporibus,
 minima explicabo totam expedita architecto fugit animi neque est ex ratione corporis modi atque deleniti praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
 ipsa incidunt maiores asperiores aspernatur? Iste id nesciunt dolores vitae provident aperiam error repellat sunt eius voluptates ab, autem dolorem non laboriosam veniam nulla. Numquam
 rem, quod maiores laudantium sapiente exercitationem odio tempora minima deleniti eius. Eligendi iure repellendus excepturi optio maxime laborum aperiam sapiente, reprehenderit minus
@@ -20,7 +58,7 @@ laborum, expedita aliquid asperiores vero hic velit non perferendis error facili
 magnam officia temporibus, at numquam quasi! Saepe nobis cupiditate aut omnis quia ipsum maiores. Fugiat nihil laborum error architecto dolores expedita numquam. Deleniti tempora
 consequuntur laborum tempore rerum, quos ducimus omnis nulla, amet sapiente placeat, quae hic consectetur eius perferendis dolorum incidunt voluptatibus iusto autem? Temporibus omnismollitia quis vero perferendis, quasi officia, molestiae quas labore incidunt sint. Quia unde, voluptates doloremque inventore fugiat rem quis ullam possimus reprehenderit, itaque quamreiciendis natus? Veniam, recusandae illo? Perspiciatis autem tempore inventore, `print(test)` distinctio hic excepturi ea saepe,modi illo eaque architecto quidem! hello
 
-```bash
+```gitattributes
 git add .
 git init -m
 ```
