@@ -65,5 +65,8 @@ module.exports = {
         path: `${__dirname}/static/assets`,
       },
     },
+
+    // transition
+    "gatsby-plugin-transition-link",
   ],
 };
