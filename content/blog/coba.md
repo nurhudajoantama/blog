@@ -5,8 +5,6 @@ thumbnail: images/default.png
 title: coba
 ---
 
-<!-- import {StaticImage} from 'gatsby-plugin-image' -->
-
 coba lah
 
 ![coba](/assets/screenshot-271-.png "coba")

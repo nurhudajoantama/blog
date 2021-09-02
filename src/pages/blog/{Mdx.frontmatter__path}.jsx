@@ -14,7 +14,7 @@ function Thumbnail({ thumbnail, alt }) {
     <>
       {thumbnail ? (
         <div className="mb-10">
-          <GatsbyImage image={thumbnail.childImageSharp.gatsbyImageData} placeholder="blurred" width="full" className="w-full h-auto" alt={alt} />
+          <GatsbyImage image={thumbnail.childImageSharp.gatsbyImageData} className="w-full h-auto" alt={alt} />
           <div className="text-sm text-gray-500">{alt}</div>
         </div>
       ) : (

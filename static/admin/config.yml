@@ -15,6 +15,6 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: title, label: Title }
-      - { name: thumbnail, label: Featured Image, widget: image, media_folder: images, require: false }
+      - { name: thumbnail, label: Featured Image, widget: image, media_folder: images, required: false }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }

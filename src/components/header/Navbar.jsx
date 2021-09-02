@@ -37,6 +37,7 @@ function ResponsiveNavbar() {
             key={index}
             to={navbarLink.to}
             className="text-blue:500 text-lg tracking-wid mx-2 py-4 px-3 border-l-8 border-blue-800 border-opacity-0 hover:border-opacity-100 hover:bg-gray-300 active:bg-gray-300 transition duration-150 ease-out"
+            activeClassName="bg-gray-200 border-opacity-80"
           >
             {navbarLink.name}
           </AniLink>
@@ -58,7 +59,13 @@ export default function Navbar() {
         {/* for desktop */}
         <div className="hidden lg:flex">
           {navbarLinks.map((navbarLink, index) => (
-            <AniLink paintDrip key={index} to={navbarLink.to} className="text-white text-lg tracking-wide mx-1 py-1 px-3 rounded hover:bg-blue-800 transition duration-150 ease-in-out">
+            <AniLink
+              paintDrip
+              key={index}
+              to={navbarLink.to}
+              className="text-white text-lg tracking-wide mx-1 py-1 px-3 rounded hover:bg-blue-900 transition duration-150 ease-in-out"
+              activeClassName="bg-blue-800"
+            >
               {navbarLink.name}
             </AniLink>
           ))}
