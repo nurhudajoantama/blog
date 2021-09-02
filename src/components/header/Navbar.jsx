@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "gatsby";
 import NavbarHamburger from "./NavbarHamburger";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 

@@ -4,6 +4,7 @@ import Footer from "../components/footer/Footer";
 import BodyLayout from "../components/layout/BodyLayout";
 import ContentContainerLayout from "../components/layout/ContentContainerLayout";
 import Navbar from "../components/header/Navbar";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 // for quote header
 function Quote() {
@@ -27,7 +28,7 @@ function Quote() {
 function BlogCardIndex({ link, title, excerpt }) {
   return (
     <div className="my-6 group">
-      <Link to={"/blog/" + link}>
+      <AniLink paintDrip to={"/blog/" + link}>
         <div to={link} className="font-semibold text-lg group-hover:underline">
           {title}
         </div>
@@ -35,7 +36,7 @@ function BlogCardIndex({ link, title, excerpt }) {
           <div>{excerpt}</div>
         </div>
         <div className="text-blue-600 hover:underline">more . . .</div>
-      </Link>
+      </AniLink>
     </div>
   );
 }

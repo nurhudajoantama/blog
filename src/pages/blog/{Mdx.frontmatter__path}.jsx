@@ -1,4 +1,4 @@
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
@@ -7,24 +7,7 @@ import Header from "../../components/header/Header";
 import ContentContainerLayout from "../../components/layout/ContentContainerLayout";
 import BodyLayout from "../../components/layout/BodyLayout";
 import Footer from "../../components/footer/Footer";
-
-function Breadcrumb({ slug }) {
-  return (
-    <div className="mx-auto max-w-screen-md text-gray-500 mt-8 text-sm">
-      <Link to="/" className="hover:text-blue-500">
-        Nurhuda Joantama
-      </Link>{" "}
-      /{" "}
-      <Link to="/blog" className="hover:text-blue-500">
-        blog
-      </Link>{" "}
-      /{" "}
-      <Link to={"/blog/" + slug} className="hover:text-blue-500">
-        {slug}
-      </Link>
-    </div>
-  );
-}
+import Breadcrumb from "../../components/Breadcrumb";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -82,13 +65,13 @@ export default class Component extends React.Component {
         <BodyLayout>
           <Header />
           <Breadcrumb slug={this.blog.slug} />
-          <div className="mb-10 mt-5">
+          <div className="mb-10 mt-7">
             <ContentContainerLayout>
               {/* title */}
               <div className="mb-5 font-semibold text-3xl text-center tracking-wider">{this.frontmatter.title}</div>
-              {/* date */}
               <div className="m-5 pt-4">
-                <div className="mb-3">{this.frontmatter.date}</div>
+                {/* date */}
+                <div className="mb-3 text-sm text-gray-700">{this.frontmatter.date}</div>
                 {/* thumbnail */}
                 <Thumbnail thumbnail={this.frontmatter.thumbnail} alt={this.frontmatter.title} />
                 {/* Body */}
@@ -107,7 +90,7 @@ export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
       frontmatter {
-        date(formatString: "DD MMMM YYYY")
+        date(formatString: "DD MMMM YYYY | HH:mm")
         title
         thumbnail {
           childImageSharp {

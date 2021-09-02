@@ -1,14 +1,16 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Header from "../components/header/Header";
 import ContentContainerLayout from "../components/layout/ContentContainerLayout";
 import BodyLayout from "../components/layout/BodyLayout";
 import Footer from "../components/footer/Footer";
 import { GatsbyImage } from "gatsby-plugin-image";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Breadcrumb from "../components/Breadcrumb";
 
 function BlogCard({ title, link, thumbnail, excerpt, date }) {
   return (
-    <Link to={"/blog/" + link}>
+    <AniLink paintDrip to={"/blog/" + link}>
       <div className="my-10 border rounded overflow-hidden transform hover:-translate-y-0.5 hover:shadow-md group">
         <div className="max-h-32 overflow-hidden flex items-center">
           {thumbnail ? <GatsbyImage image={thumbnail.childImageSharp.gatsbyImageData} alt={title} className="object-center object-cover h-auto w-full" /> : ""}
@@ -21,7 +23,7 @@ function BlogCard({ title, link, thumbnail, excerpt, date }) {
           <div className="text-blue-600 hover:underline">more . . .</div>
         </div>
       </div>
-    </Link>
+    </AniLink>
   );
 }
 
@@ -31,10 +33,11 @@ export default function blog({ data }) {
     <BodyLayout>
       <Header />
       <div className="my-10">
+        <Breadcrumb />
         <ContentContainerLayout>
-          <Link to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
+          <AniLink paintDrip to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
             Blog
-          </Link>
+          </AniLink>
           {blogs.map((blog, index) => (
             <BlogCard title={blog.frontmatter.title} link={blog.slug} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
           ))}
