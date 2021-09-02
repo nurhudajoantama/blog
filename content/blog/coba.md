@@ -1,8 +1,7 @@
 ---
 path: coba
 date: 2021-08-30T15:49:40.939Z
-thumbnail: ../../static/assets/screenshot-271-.png
-thumbnailDesc: coba thumnail description
+thumbnail: images/default.png
 title: coba
 ---
 

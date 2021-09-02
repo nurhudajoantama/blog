@@ -26,9 +26,9 @@ function Quote() {
 // for lates blog
 function BlogCardIndex({ link, title, excerpt }) {
   return (
-    <div className="my-6">
+    <div className="my-6 group">
       <Link to={"/blog/" + link}>
-        <div to={link} className="font-semibold text-lg hover:underline">
+        <div to={link} className="font-semibold text-lg group-hover:underline">
           {title}
         </div>
         <div to={link}>
