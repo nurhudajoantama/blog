@@ -1,8 +1,8 @@
 ---
 path: coba
-date: 2021-08-30T15:49:40.939Z
-thumbnail: images/default.png
 title: coba
+thumbnail: ""
+date: 2021-08-30T15:49:40.939Z
 ---
 
 <!-- import {StaticImage} from 'gatsby-plugin-image' -->
