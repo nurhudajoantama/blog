@@ -8,10 +8,8 @@ module.exports = {
   plugins: [
     // for tailwind
     "gatsby-plugin-postcss",
-
     // Netlify CMS
     "gatsby-plugin-netlify-cms",
-
     // Markdorn query
     {
       resolve: "gatsby-plugin-mdx",
@@ -49,12 +47,10 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-
     //Image
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
-
     // generate page
     {
       resolve: "gatsby-source-filesystem",
@@ -70,7 +66,6 @@ module.exports = {
         ignore: [`blog/index.(js|ts)?(x)`],
       },
     },
-
     // assetes
     {
       resolve: "gatsby-source-filesystem",
@@ -79,8 +74,9 @@ module.exports = {
         path: `${__dirname}/static/assets`,
       },
     },
-
     // transition
     "gatsby-plugin-transition-link",
+    // react helmet
+    "gatsby-plugin-react-helmet",
   ],
 };
