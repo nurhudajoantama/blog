@@ -1,0 +1,15 @@
+.gatsby-highlight {
+  @apply overflow-auto my-7;
+}
+
+.gatsby-highlight-code-line {
+  @apply bg-blue-100 block -mx-4 pl-3 pr-4 border-l-4 border-blue-700;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  @apply bg-transparent min-w-min;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers .line-numbers-rows {
+  @apply pl-6;
+}

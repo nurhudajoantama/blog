@@ -17,6 +17,20 @@ module.exports = {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [`.md`, `.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              inlineCodeMarker: ">",
+              prompt: {
+                user: "root",
+                host: "localhost",
+                global: false,
+              },
+            },
+          },
+        ],
       },
     },
     // query blog

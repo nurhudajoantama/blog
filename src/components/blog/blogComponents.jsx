@@ -85,22 +85,6 @@ function ol(props) {
   return <ol className="list-decimal list-inside relative left-3">{props.children}</ol>;
 }
 
-function code(props) {
-  return (
-    <code className="py-1 px-2 rounded bg-gray-200 font-mono" {...props}>
-      {props.children}
-    </code>
-  );
-}
-
-function pre(props) {
-  return (
-    <pre className="bg-gray-200 py-3 pl-5 pr-3 shadow-sm rounded font-mono" {...props}>
-      {props.children}
-    </pre>
-  );
-}
-
 function blockquote(props) {
   return (
     <blockquote className="border-l-4 pl-2 border-blue-500" {...props}>
@@ -109,5 +93,5 @@ function blockquote(props) {
   );
 }
 
-const blogComponents = { em, strong, p, h1, h2, h3, h4, h5, h6, img, ul, ol, code, pre, blockquote };
+const blogComponents = { em, strong, p, h1, h2, h3, h4, h5, h6, img, ul, ol, blockquote };
 export default blogComponents;
