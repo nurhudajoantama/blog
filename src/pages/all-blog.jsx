@@ -36,15 +36,11 @@ export default function blog({ data }) {
         <Breadcrumb />
         <ContentContainerLayout>
           <AniLink paintDrip to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
-            Blog
+            All Blog
           </AniLink>
           {blogs.map((blog, index) => (
             <BlogCard title={blog.frontmatter.title} link={blog.slug} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
           ))}
-          <hr />
-          <AniLink paintDrip to="/all-blog">
-            <div className="text-center text-lg text-blue-500 py-3 bg-gray-200 hover:underline">all blog . . .</div>
-          </AniLink>
         </ContentContainerLayout>
       </div>
       <Footer />
@@ -53,8 +49,8 @@ export default function blog({ data }) {
 }
 
 export const query = graphql`
-  query BlogsQuery {
-    allMdx(sort: { order: DESC, fields: frontmatter___date }, limit: 15) {
+  query AllBlogsQuery {
+    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       nodes {
         excerpt(pruneLength: 150)
         frontmatter {

@@ -24,8 +24,8 @@ export default function Breadcrumb() {
           );
         } else {
           let result = "";
-          for (let index1 = 0; index1 <= index; index1++) {
-            result += "/" + paths[index1];
+          for (let resultIndex = 0; resultIndex <= index; resultIndex++) {
+            result += "/" + paths[resultIndex];
           }
           return (
             <React.Fragment key={index}>

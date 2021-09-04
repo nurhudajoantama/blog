@@ -8,6 +8,7 @@ import ContentContainerLayout from "../../components/layout/ContentContainerLayo
 import BodyLayout from "../../components/layout/BodyLayout";
 import Footer from "../../components/footer/Footer";
 import Breadcrumb from "../../components/Breadcrumb";
+import blogComponents from "../../components/blog/blogComponents";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -27,26 +28,7 @@ function Thumbnail({ thumbnail, alt }) {
 function ContentBlog({ body }) {
   return (
     <div>
-      <MDXProvider
-        components={{
-          p: (props) => (
-            <p className="text-lg leading-relaxed tracking-wide my-7" {...props}>
-              {props.children}
-            </p>
-          ),
-          img: (props) => <img className="w-full h-auto my-7" alt={props.alt} {...props} />,
-          code: (props) => (
-            <code className="py-1 px-2 rounded bg-gray-200 font-mono" {...props}>
-              {props.children}
-            </code>
-          ),
-          pre: (props) => (
-            <pre className="bg-gray-200 py-3 pl-5 pr-3 shadow-sm rounded font-mono" {...props}>
-              {props.children}
-            </pre>
-          ),
-        }}
-      >
+      <MDXProvider components={blogComponents}>
         <MDXRenderer>{body}</MDXRenderer>
       </MDXProvider>
     </div>

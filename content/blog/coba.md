@@ -1,23 +1,29 @@
 ---
 path: coba
 title: coba
-thumbnail: ""
+thumbnail:
 date: 2021-08-30T15:49:40.939Z
 ---
 
 > quote
 
-# test
+# test 1
 
-## test
+## test 2
 
-### test
+### test 3
 
-#### test
+#### test 4
 
-##### test
+##### test 5
 
-###### test
+###### test 6
+
+**bold**
+
+_italic_
+
+**_bold italic_**
 
 coba lah
 
@@ -26,30 +32,24 @@ ul
 - 1
 - 2
 - 3
-
   - 4
-
+    - ini dalem lagi
 - 5
-
   - 6
-
 - praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
   ipsa incidunt maiores asperiores aspernatur? Iste id nesciunt dolores vitae provident aperiam error repellat sunt eius voluptates ab, autem dolorem non laboriosam veniam nulla. Numquam
 
 1. 1
 2. 2
 3. 2
-
    1. 3
-
       1. 4
-
 4. 5
 5. 6
 6. praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
    ipsa incidunt maiores asperiores aspernatur? Iste id nesciunt dolores vitae provident aperiam error repellat sunt eius voluptates ab, autem dolorem non laboriosam veniam nulla. Numquam
 
-![coba](/assets/screenshot-271-.png "coba")
+![coba](http://localhost/image/1.jpg "coba")
 
 **Lorem** ipsum _dolor_ sit, amet consectetur adipisicing elit. Nihil amet excepturi quam ut eveniet, dolores veritatis tenetur earum, laboriosam, tempore sequi eius. Iusto temporibus,
 minima explicabo totam expedita architecto fugit animi neque est ex ratione corporis modi atque deleniti praesentium veritatis quisquam! Error impedit culpa veritatis mollitia dolor
