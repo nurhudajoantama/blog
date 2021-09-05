@@ -1,9 +1,16 @@
+const config = require("./config/website");
+require("dotenv").config();
+
 module.exports = {
   // for data helmet, etc
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Nurhuda Joantama Putra",
-    author: { name: "Nurhuda Joantama Putra" },
+    siteUrl: config.siteUrl,
+    canonicalUrl: config.siteUrl,
+    image: config.siteLogo,
+    title: config.siteTitleShort,
+    description: config.description,
+    keywords: ["blog", "portfolio"],
+    author: { name: config.author },
   },
   plugins: [
     // for tailwind
