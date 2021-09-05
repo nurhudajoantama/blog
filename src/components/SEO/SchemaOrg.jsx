@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-export default React.memo(({ author, siteUrl, datePublished, defaultTitle, description, image, isBlogPost, organization, title, url }) => {
+export default React.memo(({ author, siteUrl, date, defaultTitle, description, image, isBlogPost, organization, title, url }) => {
   const baseSchema = [
     {
       "@context": "http://schema.org",
@@ -46,20 +46,11 @@ export default React.memo(({ author, siteUrl, datePublished, defaultTitle, descr
             "@type": "Person",
             name: author.name,
           },
-          publisher: {
-            "@type": "Organization",
-            url: organization.url,
-            logo: {
-              "@type": "ImageObject",
-              url: organization.logo,
-            },
-            name: organization.name,
-          },
           mainEntityOfPage: {
             "@type": "WebSite",
             "@id": siteUrl,
           },
-          datePublished,
+          date,
         },
       ]
     : baseSchema;

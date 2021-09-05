@@ -1,6 +1,7 @@
 ---
 title: Kenapa Komputer ?
 path: kenapa-komputer
+description: Tentang diri saya mengapa memilih komputer
 date: 2021-09-02
 ---
 

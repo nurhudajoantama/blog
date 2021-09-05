@@ -9,6 +9,7 @@ import BodyLayout from "../../components/layout/BodyLayout";
 import Footer from "../../components/footer/Footer";
 import Breadcrumb from "../../components/Breadcrumb";
 import blogComponents from "../../components/blog/blogComponents";
+import SEO from "../../components/SEO";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -42,8 +43,17 @@ export default class Component extends React.Component {
     this.frontmatter = this.blog.frontmatter;
   }
   render() {
+    console.log(this.frontmatter.thumbnail);
     return (
-      <div>
+      <>
+        <SEO
+          frontmatter={{
+            ...this.frontmatter,
+            slug: "blog/" + this.blog.slug,
+          }}
+          // postImage={this.frontmatter.thumbnail.fluid.src}
+          isBlogPost
+        />
         <BodyLayout>
           <Header />
           <Breadcrumb slug={this.blog.slug} />
@@ -63,7 +73,7 @@ export default class Component extends React.Component {
           </div>
           <Footer />
         </BodyLayout>
-      </div>
+      </>
     );
   }
 }
@@ -74,9 +84,13 @@ export const query = graphql`
       frontmatter {
         date(formatString: "DD MMMM YYYY | HH:mm")
         title
+        description
         thumbnail {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED)
+            fluid {
+              src
+            }
           }
         }
       }

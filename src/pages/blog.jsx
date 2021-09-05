@@ -54,7 +54,7 @@ export default function blog({ data }) {
 
 export const query = graphql`
   query BlogsQuery {
-    allMdx(sort: { order: DESC, fields: frontmatter___date }, limit: 15) {
+    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
       nodes {
         excerpt(pruneLength: 150)
         frontmatter {

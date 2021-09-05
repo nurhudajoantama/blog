@@ -35,7 +35,7 @@ export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost 
   const description = postMeta.description || seo.description;
   const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
   const url = postMeta.slug ? `${seo.siteUrl}/${postMeta.slug}/` : seo.siteUrl;
-  const datePublished = isBlogPost ? postMeta.datePublished : false;
+  const date = isBlogPost ? postMeta.date : false;
   return (
     <>
       <Helmet>
@@ -65,7 +65,7 @@ export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost 
         title={title}
         image={image}
         description={description}
-        datePublished={datePublished}
+        date={date}
         siteUrl={seo.siteUrl}
         author={seo.author}
         organization={seo.organization}
