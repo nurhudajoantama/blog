@@ -5,7 +5,7 @@ import BodyLayout from "../components/layout/BodyLayout";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default function NotFoundPage() {
-  const pathName = window.location.pathname;
+  const pathName = typeof window !== "undefined" ? window.location.pathname : "";
   return (
     <BodyLayout>
       <div className="min-h-screen flex flex-col">

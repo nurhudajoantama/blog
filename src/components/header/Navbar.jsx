@@ -30,7 +30,7 @@ function ResponsiveNavbar() {
   return (
     <>
       <NavbarHamburger isNavbarOpen={isNavbarOpen} navbarClick={navbarClick} />
-      <div className={"flex-col fixed h-full min-w-min w-2/3 md:w-1/2 left-0 top-0 bg-white shadow-md py-10 pr-7 pl-2 z-50 overflow-auto" + (isNavbarOpen ? " flex" : " hidden")}>
+      <div className={"flex-col fixed h-full min-w-min w-2/3 md:w-1/2 left-0 top-0 bg-white shadow-md py-10 pr-7 pl-2 z-50" + (isNavbarOpen ? " flex" : " hidden")}>
         {navbarLinks.map((navbarLink, index) => (
           <AniLink
             paintDrip

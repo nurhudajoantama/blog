@@ -88,6 +88,8 @@ module.exports = {
     "gatsby-plugin-transition-link",
     // react helmet
     "gatsby-plugin-react-helmet",
+    // sitemap
+    "gatsby-plugin-sitemap",
     // manifest for logo
     {
       resolve: "gatsby-plugin-manifest",

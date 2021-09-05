@@ -7,6 +7,7 @@ import Footer from "../components/footer/Footer";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Breadcrumb from "../components/Breadcrumb";
+import SEO from "../components/SEO";
 
 function BlogCard({ title, link, thumbnail, excerpt, date }) {
   return (
@@ -30,25 +31,24 @@ function BlogCard({ title, link, thumbnail, excerpt, date }) {
 export default function blog({ data }) {
   const blogs = data.allMdx.nodes;
   return (
-    <BodyLayout>
-      <Header />
-      <div className="my-10">
-        <Breadcrumb />
-        <ContentContainerLayout>
-          <AniLink paintDrip to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
-            Blog
-          </AniLink>
-          {blogs.map((blog, index) => (
-            <BlogCard title={blog.frontmatter.title} link={blog.slug} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
-          ))}
-          <hr />
-          <AniLink paintDrip to="/all-blog">
-            <div className="text-center text-lg text-blue-500 py-3 bg-gray-200 hover:underline">all blog . . .</div>
-          </AniLink>
-        </ContentContainerLayout>
-      </div>
-      <Footer />
-    </BodyLayout>
+    <>
+      <SEO />
+      <BodyLayout>
+        <Header />
+        <div className="my-10">
+          <Breadcrumb />
+          <ContentContainerLayout>
+            <AniLink paintDrip to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
+              Blog
+            </AniLink>
+            {blogs.map((blog, index) => (
+              <BlogCard title={blog.frontmatter.title} link={blog.slug} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
+            ))}
+          </ContentContainerLayout>
+        </div>
+        <Footer />
+      </BodyLayout>
+    </>
   );
 }
 

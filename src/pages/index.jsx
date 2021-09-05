@@ -17,10 +17,10 @@ function Quote() {
         </svg>
       </div>
       <p className="mt-2 mb-1">
-        Jangan cuma diem tapi terus bergerak <br />
-        Yang penting terus berusaha.
+        Orang bodoh seringkali beralasan sabar terhadap segala sesuatu <br />
+        yang sebenarnya dia mengalah dengan keadaan tanpa pernah berusaha.
       </p>
-      <div>- Unknown</div>
+      <div>- Albert Einstein</div>
     </div>
   );
 }

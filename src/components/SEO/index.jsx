@@ -31,7 +31,7 @@ export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost 
   // slugnya kudu ditambah blog. descriptionnya. image, datePublish
   const postMeta = frontmatter || postData.childMarkdownRemark.frontmatter || {};
 
-  const title = postMeta.title || seo.title;
+  const title = postMeta.title ? postMeta.title : seo.title;
   const description = postMeta.description || seo.description;
   const image = postImage ? `${seo.siteUrl}${postImage}` : seo.image;
   const url = postMeta.slug ? `${seo.siteUrl}/${postMeta.slug}/` : seo.siteUrl;

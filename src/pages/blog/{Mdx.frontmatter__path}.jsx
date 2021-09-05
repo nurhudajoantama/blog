@@ -43,7 +43,6 @@ export default class Component extends React.Component {
     this.frontmatter = this.blog.frontmatter;
   }
   render() {
-    console.log(this.frontmatter.thumbnail);
     return (
       <>
         <SEO

@@ -10,7 +10,7 @@ function BreadcrumbLink({ to, children }) {
 }
 
 export default function Breadcrumb() {
-  const paths = window.location.pathname.replaceAll("/", " ").trim().split(" ");
+  const paths = typeof window !== "undefined" ? window.location.pathname.replaceAll("/", " ").trim().split(" ") : [];
   return (
     <div className="mx-auto max-w-screen-md text-gray-500 my-6 text-sm px-5">
       <BreadcrumbLink to="/">Nurhuda Joantama</BreadcrumbLink>
