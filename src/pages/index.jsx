@@ -5,6 +5,7 @@ import BodyLayout from "../components/layout/BodyLayout";
 import ContentContainerLayout from "../components/layout/ContentContainerLayout";
 import Navbar from "../components/header/Navbar";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
+import SEO from "../components/SEO";
 
 // for quote header
 function Quote() {
@@ -74,14 +75,17 @@ function BodyLatestBlog() {
 
 export default function index() {
   return (
-    <BodyLayout>
-      {/* header */}
-      <div className="w-full bg-blue-700 pb-10">
-        <Navbar />
-        <Quote />
-      </div>
-      <BodyLatestBlog />
-      <Footer />
-    </BodyLayout>
+    <>
+      <SEO />
+      <BodyLayout>
+        {/* header */}
+        <div className="w-full bg-blue-700 pb-10">
+          <Navbar />
+          <Quote />
+        </div>
+        <BodyLatestBlog />
+        <Footer />
+      </BodyLayout>
+    </>
   );
 }

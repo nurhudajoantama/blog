@@ -11,6 +11,9 @@ module.exports = {
     description: config.description,
     keywords: ["blog", "Nurhuda Joantama"],
     author: { name: config.author },
+    social: {
+      twitter: config.twitter,
+    },
   },
   plugins: [
     // for tailwind

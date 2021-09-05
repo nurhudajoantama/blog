@@ -53,7 +53,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between py-7">
         <div>
           <AniLink paintDrip to="/" className="text-white text-2xl">
-            NurhudaJoantama
+            Nurhuda Joantama
           </AniLink>
         </div>
         {/* for desktop */}
