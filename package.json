@@ -20,6 +20,7 @@
     "dotenv": "^10.0.0",
     "gatsby": "^3.12.1",
     "gatsby-plugin-image": "^1.12.0",
+    "gatsby-plugin-manifest": "^3.13.0",
     "gatsby-plugin-mdx": "^2.12.0",
     "gatsby-plugin-netlify-cms": "^5.12.0",
     "gatsby-plugin-page-creator": "^3.12.0",

@@ -7,9 +7,9 @@ module.exports = {
     siteUrl: config.siteUrl,
     canonicalUrl: config.siteUrl,
     image: config.siteLogo,
-    title: config.siteTitleShort,
+    title: config.siteTitle,
     description: config.description,
-    keywords: ["blog", "portfolio"],
+    keywords: ["blog", "Nurhuda Joantama"],
     author: { name: config.author },
   },
   plugins: [
@@ -85,5 +85,20 @@ module.exports = {
     "gatsby-plugin-transition-link",
     // react helmet
     "gatsby-plugin-react-helmet",
+    // manifest for logo
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
+        description: config.siteDescription,
+        lang: config.lang,
+        display: "standalone",
+        icon: "static/images/icon.png",
+        start_url: "/",
+        background_color: "rgb(29,78,216)",
+        theme_color: "rgb(243,244,246)",
+      },
+    },
   ],
 };

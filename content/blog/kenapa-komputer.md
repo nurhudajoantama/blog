@@ -4,7 +4,7 @@ path: kenapa-komputer
 date: 2021-09-02
 ---
 
-Judul dari blog ini mungkin membuat bingung, apa maksud dan tujuan blog ini?
+Judul dari blog ini mungkin membuat bingung, apa maksud dan tujuan blog post ini?
 
 Sebanarnya pada postingan blog yang pertama ini saya hanya ingin menceritakan tentang diri saya dan sedikit perjalanan saya mengapa saya memilih jurusan yang mengarah pada komputer atau saya sangat senang dengan hal-hal yang berhubungan dengan komputer.
 
