@@ -16,6 +16,14 @@ module.exports = {
     },
   },
   plugins: [
+    // Google tag manager
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-MJC32NQ",
+        includeInDevelopment: false,
+      },
+    },
     // for tailwind
     "gatsby-plugin-postcss",
     // Netlify CMS
