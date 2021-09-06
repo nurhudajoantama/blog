@@ -28,42 +28,42 @@ function p(props) {
 
 function h1(props) {
   return (
-    <h1 className="font-bold text-3xl" {...props}>
+    <h1 className="font-bold text-3xl my-7" {...props}>
       {props.children}
     </h1>
   );
 }
 function h2(props) {
   return (
-    <h2 className="text-3xl" {...props}>
+    <h2 className="text-3xl my-7" {...props}>
       {props.children}
     </h2>
   );
 }
 function h3(props) {
   return (
-    <h3 className="font-bold text-2xl" {...props}>
+    <h3 className="font-bold text-2xl my-7" {...props}>
       {props.children}
     </h3>
   );
 }
 function h4(props) {
   return (
-    <h4 className="text-2xl" {...props}>
+    <h4 className="text-2xl my-7" {...props}>
       {props.children}
     </h4>
   );
 }
 function h5(props) {
   return (
-    <h5 className="font-bold text-xl" {...props}>
+    <h5 className="font-bold text-xl my-7" {...props}>
       {props.children}
     </h5>
   );
 }
 function h6(props) {
   return (
-    <h6 className="text-xl" {...props}>
+    <h6 className="text-xl my-7" {...props}>
       {props.children}
     </h6>
   );
@@ -75,19 +75,19 @@ function img(props) {
 
 function ul(props) {
   return (
-    <ul className="list-disc list-inside relative left-3" {...props}>
+    <ul className="list-disc list-inside relative left-3 my-7" {...props}>
       {props.children}
     </ul>
   );
 }
 
 function ol(props) {
-  return <ol className="list-decimal list-inside relative left-3">{props.children}</ol>;
+  return <ol className="list-decimal list-inside relative left-3 my-7">{props.children}</ol>;
 }
 
 function blockquote(props) {
   return (
-    <blockquote className="border-l-4 pl-2 border-blue-500" {...props}>
+    <blockquote className="border-l-4 pl-2 border-blue-500 my-7" {...props}>
       {props.children}
     </blockquote>
   );
@@ -95,7 +95,7 @@ function blockquote(props) {
 
 function a(props) {
   return (
-    <a className="text-blue-700 hover:underline" {...props}>
+    <a className="text-blue-700 hover:underline my-7" {...props}>
       {props.children}
     </a>
   );
