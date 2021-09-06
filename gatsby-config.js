@@ -50,13 +50,13 @@ module.exports = {
       },
     },
     // query image
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: `${__dirname}/src/images`,
-      },
-    },
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: "images",
+    //     path: `${__dirname}/src/images`,
+    //   },
+    // },
     //Image
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
