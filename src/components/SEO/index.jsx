@@ -58,6 +58,9 @@ export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost 
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+
+        {/* google verification */}
+        <meta name="google-site-verification" content="wKne_92-mr93wnqTWX3dJmmzEdS1AsfkfP3yRNYdC9E" />
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPost}
