@@ -34,7 +34,7 @@ npm install express
 
 lalu tunggu, setelah selesai hasilnya akan seperti gambar
 
-![install-express](images/install-express-api.png "install-express")
+![install-express](/assets/install-express-api.png "install-express")
 
 setelah itu kita dapat membuka code editor kita dan mengarahkannya pada directory tempat kita menyimpan project
 
@@ -55,7 +55,7 @@ anda juga bisa mengganti port dengan mengganti angka 3000 pada baris ke-4
 
 Setelah itu anda dapat mencoba menjalankan server dengan menjalankan `shell>node index` atau `shell>node server`
 
-![test-run-express](images/test-run-express-api.png "test-run-express")
+![test-run-express](/assets/test-run-express-api.png "test-run-express")
 
 <h3 id="express-routing">Routing pada express</h3>
 
