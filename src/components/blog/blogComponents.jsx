@@ -93,5 +93,13 @@ function blockquote(props) {
   );
 }
 
-const blogComponents = { em, strong, p, h1, h2, h3, h4, h5, h6, img, ul, ol, blockquote };
+function a(props) {
+  return (
+    <a className="text-blue-700 hover:underline" {...props}>
+      {props.children}
+    </a>
+  );
+}
+
+const blogComponents = { em, strong, p, h1, h2, h3, h4, h5, h6, img, ul, ol, blockquote, a };
 export default blogComponents;

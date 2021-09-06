@@ -33,9 +33,7 @@ function BlogCardIndex({ link, title, excerpt }) {
         <div to={link} className="font-semibold text-lg group-hover:underline">
           {title}
         </div>
-        <div to={link}>
-          <div>{excerpt}</div>
-        </div>
+        <div className="leading-relaxed tracking-wide mt-1">{excerpt}</div>
         <div className="text-blue-600 hover:underline">more . . .</div>
       </AniLink>
     </div>
@@ -47,7 +45,7 @@ function BodyLatestBlog() {
     query LatestBlogsQuery {
       allMdx(sort: { order: DESC, fields: frontmatter___date }, limit: 4) {
         nodes {
-          excerpt(pruneLength: 170)
+          excerpt(pruneLength: 120)
           frontmatter {
             title
           }
