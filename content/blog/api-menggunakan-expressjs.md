@@ -3,7 +3,7 @@ path: api-menggunakan-expressjs
 title: API menggunakan ExpressJS
 description: cara membuat API menggunakan ExpressJS
 thumbnail: images/api-menggunakan-express.png
-date: 2021-09-06T12:14:56.906Z
+date: 2021-09-06T12:37:03.413Z
 ---
 kali ini saya akan menjelaskan tentang bagaimana cara membuat API dengan ExpressJS
 
@@ -34,7 +34,7 @@ npm install express
 
 lalu tunggu, setelah selesai hasilnya akan seperti gambar
 
-![install-express](/assets/install-express-api.png "install-express")
+![install-express](/assets/install-express-api.jpg "install-express")
 
 setelah itu kita dapat membuka code editor kita dan mengarahkannya pada directory tempat kita menyimpan project
 
@@ -55,7 +55,7 @@ anda juga bisa mengganti port dengan mengganti angka 3000 pada baris ke-4
 
 Setelah itu anda dapat mencoba menjalankan server dengan menjalankan `shell>node index` atau `shell>node server`
 
-![test-run-express](/assets/test-run-express-api.png "test-run-express")
+![test-run-express](/assets/test-run-express-api.jpg "test-run-express")
 
 <h3 id="express-routing">Routing pada express</h3>
 
