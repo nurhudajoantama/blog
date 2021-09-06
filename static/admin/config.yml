@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: nurhudajoantama/blog
-  branch: main
+  branch: staging
 
 publish_mode: editorial_workflow
 media_folder: static/assets
