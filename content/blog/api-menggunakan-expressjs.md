@@ -3,7 +3,7 @@ path: api-menggunakan-expressjs
 title: API menggunakan ExpressJS
 description: cara membuat API menggunakan ExpressJS
 thumbnail: images/api-menggunakan-express.png
-date: 2021-09-06T12:14:56.906Z
+date: 2021-09-06T12:37:03.413Z
 ---
 kali ini saya akan menjelaskan tentang bagaimana cara membuat API dengan ExpressJS
 
