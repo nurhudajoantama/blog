@@ -94,8 +94,9 @@ function blockquote(props) {
 }
 
 function a(props) {
+  const blankTarget = props.href.startsWith("http");
   return (
-    <a className="text-blue-700 hover:underline my-7" {...props}>
+    <a className="text-blue-700 hover:underline my-7" {...props} target={blankTarget ? "_blank" : ""}>
       {props.children}
     </a>
   );
