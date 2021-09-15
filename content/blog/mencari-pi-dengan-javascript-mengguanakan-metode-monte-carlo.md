@@ -123,7 +123,7 @@ Saya membuat blog post ini terinspirasi dari video di channel You Tube Joma Tech
 
 refresnsi:
 
-1. [Can you solve my favorite interview question? (math + cs)](https://youtu.be/pvimAM_SLic).
+1. [Can you solve my favorite interview question? (math + cs)](https://youtu.be/pvimAM_SLic)
 2. [Pi](https://id.wikipedia.org/wiki/Pi)
 3. [Metode Monte Carlo](https://id.wikipedia.org/wiki/Metode_Monte_Carlo)
-4. [monte-carlo-pi](https://github.com/Dan-Q/monte-carlo-pi).
+4. [monte-carlo-pi](https://github.com/Dan-Q/monte-carlo-pi)
