@@ -42,7 +42,7 @@ export default function blog({ data }) {
               Blog
             </AniLink>
             {blogs.map((blog, index) => (
-              <BlogCard title={blog.frontmatter.title} link={blog.slug} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
+              <BlogCard title={blog.frontmatter.title} link={blog.frontmatter.path} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
             ))}
           </ContentContainerLayout>
         </div>
@@ -67,7 +67,6 @@ export const query = graphql`
             }
           }
         }
-        slug
       }
     }
   }

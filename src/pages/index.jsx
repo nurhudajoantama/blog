@@ -48,8 +48,8 @@ function BodyLatestBlog() {
           excerpt(pruneLength: 120)
           frontmatter {
             title
+            path
           }
-          slug
         }
       }
     }
@@ -63,7 +63,7 @@ function BodyLatestBlog() {
         </Link>
         <div>
           {latestBlogs.map((blog, index) => (
-            <BlogCardIndex title={blog.frontmatter.title} excerpt={blog.excerpt} link={blog.slug} key={index} />
+            <BlogCardIndex title={blog.frontmatter.title} excerpt={blog.excerpt} link={blog.frontmatter.path} key={index} />
           ))}
         </div>
       </ContentContainerLayout>

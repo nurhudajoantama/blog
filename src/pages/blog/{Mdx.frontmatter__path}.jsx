@@ -46,16 +46,13 @@ export default class Component extends React.Component {
     return (
       <>
         <SEO
-          frontmatter={{
-            ...this.frontmatter,
-            slug: "blog/" + this.blog.slug,
-          }}
+          frontmatter={this.frontmatter}
           // postImage={this.frontmatter.thumbnail.fluid.src}
           isBlogPost
         />
         <BodyLayout>
           <Header />
-          <Breadcrumb slug={this.blog.slug} />
+          <Breadcrumb />
           <div className="mb-10 mt-7">
             <ContentContainerLayout>
               {/* title */}
@@ -83,6 +80,7 @@ export const query = graphql`
       frontmatter {
         date(formatString: "DD MMMM YYYY | HH:mm")
         title
+        path
         description
         thumbnail {
           childImageSharp {
@@ -93,7 +91,6 @@ export const query = graphql`
           }
         }
       }
-      slug
       body
     }
   }
