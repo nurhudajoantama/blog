@@ -5,6 +5,7 @@ description: Mencari Pi dengan Javascript MenggunakanMetode Monte Carlo
 thumbnail: images/circle-pi-thumb.png
 date: 2021-09-15T09:03:19.649Z
 ---
+
 Kita tau, kita dapat mencari luas atau keliling lingkaran dengan pi (<span>&#8508;</span>), tapi sebenarnya tau tidak sih darimana asalnya bilangan yang disebut phi atau pi itu.
 
 Dalam Wikipedia pada artikel yang berjudul [Pi](https://id.wikipedia.org/wiki/Pi). Tertulis bilangan <span>&#8508;</span> (kadang-kadang ditulis pi) adalah sebuah konstanta dalam matematika yang merupakan perbandingan keliling lingkaran dengan diameternya. Nilai <span>&#8508;</span> dalam 20 tempat desimal adalah 3,14159265358979323846. Banyak rumus dalam matematika, sains, dan teknik yang menggunakan π, yang menjadikannya salah satu dari konstanta matematika yang penting.
@@ -33,15 +34,15 @@ Seperti penjelasan pi di atas kita harus membandingkan antara lingkaran dengan d
 
 ![perbandingan persegi dan lingkaran](/assets/circle-pi.png "perbandingan persegi dan lingkaran")
 
-untuk mempermudah dalam menulis *code* kita hanya perlu mengambil 1/4 bagian dari lingkaran dan juga perseginya. tetapi hal ini tidak akan berpengaruh pada perhitungan dan rumus. Tinggal kita masukkan saja beberapa *variable* yang kita ketahui.
+untuk mempermudah dalam menulis _code_ kita hanya perlu mengambil 1/4 bagian dari lingkaran dan juga perseginya. tetapi hal ini tidak akan berpengaruh pada perhitungan dan rumus. Tinggal kita masukkan saja beberapa _variable_ yang kita ketahui.
 
 ![rumus](/assets/circle-pi-formula.png "rumus")
 
 <h3 id="sample-point">Membuat Titik Sampel</h3>
 
-Dari rumus yang ada kita harus membuat point-point sampel sebagai perbandingan persegi dengan lingkarannya, karena kita hanya membutuhkan 1/4 lingkaran maka kita hanya perlu membuat *random* angka antara 0 sampai 1.
+Dari rumus yang ada kita harus membuat point-point sampel sebagai perbandingan persegi dengan lingkarannya, karena kita hanya membutuhkan 1/4 lingkaran maka kita hanya perlu membuat _random_ angka antara 0 sampai 1.
 
-```javascript
+```js
 const x = Math.random();
 const y = Math.random();
 ```
@@ -52,7 +53,7 @@ Pastinya kita harus membedakan antara point di dalam lingkaran dan di dalam pers
 
 Dalam mengukur jarak kita dapat menggunakan rumus pitagoras. Tetapi pada kasus ini kita tidak membutuhkan akar pangkat karena semua akar yang di bawah 1 akan menghasilkan angka di bawah 1 pula, dan semua yang diatas 1 akan menghasilkan angka di atas 1 pula. Tetapi terserah jika tetap ingin menggunakan akar pangkat.
 
-```javascript
+```js
 // with square root
 const distance = Math.sqrt(x ** 2 + y ** 2);
 if (distance <= 1) {
@@ -60,7 +61,7 @@ if (distance <= 1) {
 }
 ```
 
-```javascript
+```js
 // without square root
 const distance = x ** 2 + y ** 2;
 if (distance <= 1) {
@@ -72,7 +73,7 @@ if (distance <= 1) {
 
 Setelah semua selesai dibuat kita dapat membuat dan mengetahui satu titik maka kita harus membuat banyak titik sebagai sampel dengan mengulangnya, dan membuatnya menjadi sebuah fungsi.
 
-```javascript
+```js{numberLines:true}
 // index.js
 
 function findPi(manyLoop) {
@@ -99,9 +100,9 @@ function findPi(manyLoop) {
 console.log(findPi(100));
 ```
 
-Pada *code* diatas pada baris ke pertama saya membuat fungsi baru yang bernama `findPi()`
+Pada _code_ diatas pada baris ke pertama saya membuat fungsi baru yang bernama `findPi()`
 
-Pada baris kedua dan ketiga saya membuat *variable* untuk menampung hasil dari perulangan
+Pada baris kedua dan ketiga saya membuat _variable_ untuk menampung hasil dari perulangan
 
 Setelah itu saya membuat perulangan dengan banyak yang ditentukan oleh parameter fungsi `findPi()`
 
@@ -117,7 +118,7 @@ atau jika anda tidak mempunyai nodeJs anda dapat menjalankannya pada web browser
 <script src="index.js"></script>
 ```
 
-Sekian dari saya, jika anda ingin membuat *code* tersebut dapat di visualisasikan anda dapat melihat dari [monte-carlo-pi](https://github.com/Dan-Q/monte-carlo-pi).Disitu dia membuat *code* untuk lingkaran penuh dan dapat divisualisasikan pada web browser.
+Sekian dari saya, jika anda ingin membuat _code_ tersebut dapat di visualisasikan anda dapat melihat dari [monte-carlo-pi](https://github.com/Dan-Q/monte-carlo-pi). Pada program itu dia membuat _code_ untuk lingkaran penuh dan dapat divisualisasikan pada web browser.
 
 Saya membuat blog post ini terinspirasi dari video di channel You Tube Joma Tech. [Can you solve my favorite interview question? (math + cs)](https://youtu.be/pvimAM_SLic).
 
