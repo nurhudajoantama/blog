@@ -1,7 +1,7 @@
 ---
 path: mencari-pi-dengan-javascript
-title: Mencari Pi Dengan Javascript Mengguanakan Metode Monte Carlo
-description: Mencari Pi Dengan Javascript Mengguanakan Metode Monte Carlo
+title: Mencari Pi dengan Javascript MenggunakanMetode Monte Carlo
+description: Mencari Pi dengan Javascript MenggunakanMetode Monte Carlo
 thumbnail: images/circle-pi-thumb.png
 date: 2021-09-15T09:03:19.649Z
 ---
