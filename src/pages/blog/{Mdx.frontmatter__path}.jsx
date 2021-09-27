@@ -3,13 +3,13 @@ import React from "react";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 import { GatsbyImage } from "gatsby-plugin-image";
-import Header from "../../components/header/Header";
-import ContentContainerLayout from "../../components/layout/ContentContainerLayout";
-import BodyLayout from "../../components/layout/BodyLayout";
-import Footer from "../../components/footer/Footer";
-import Breadcrumb from "../../components/Breadcrumb";
-import blogComponents from "../../components/blog/blogComponents";
-import SEO from "../../components/SEO";
+import Header from "@components/header/Header";
+import ContentContainerLayout from "@components/layout/ContentContainerLayout";
+import BodyLayout from "@components/layout/BodyLayout";
+import Footer from "@components/footer/Footer";
+import Breadcrumb from "@components/Breadcrumb";
+import blogComponents from "@components/blog/blogComponents";
+import SEO from "@components/SEO";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -56,10 +56,10 @@ export default class Component extends React.Component {
           <div className="mb-10 mt-7">
             <ContentContainerLayout>
               {/* title */}
-              <div className="mb-5 font-semibold text-3xl text-center tracking-wider">{this.frontmatter.title}</div>
+              <h1 className="mb-5 font-semibold text-3xl text-center tracking-wider">{this.frontmatter.title}</h1>
               <div className="m-5 pt-4">
                 {/* date */}
-                <div className="mb-3 text-sm text-gray-700">{this.frontmatter.date}</div>
+                <span className="mb-3 block text-sm text-gray-700">{this.frontmatter.date}</span>
                 {/* thumbnail */}
                 <Thumbnail thumbnail={this.frontmatter.thumbnail} alt={this.frontmatter.title} />
                 {/* Body */}

@@ -38,14 +38,9 @@ export default function blog({ data }) {
         <div className="my-10">
           <Breadcrumb />
           <ContentContainerLayout>
-            <div className="flex justify-between align-baseline mb-5">
-              <AniLink paintDrip to="/blog" className="font-semibold text-2xl tracking-wider">
-                Blog
-              </AniLink>
-              <AniLink paintDrip to="/blog/tugas" className="text-md text-gray-700 hover:underline">
-                Blog Tugas
-              </AniLink>
-            </div>
+            <AniLink paintDrip to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
+              Blog Tugas
+            </AniLink>
             {blogs.map((blog, index) => (
               <BlogCard title={blog.frontmatter.title} link={blog.frontmatter.path} thumbnail={blog.frontmatter.thumbnail} excerpt={blog.excerpt} key={index} date={blog.frontmatter.date} />
             ))}
@@ -58,8 +53,8 @@ export default function blog({ data }) {
 }
 
 export const query = graphql`
-  query BlogsQuery {
-    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
+  query BlogsAssignmentQuery {
+    allMdx(filter: { frontmatter: { isAssignment: { eq: true } } }, sort: { order: DESC, fields: frontmatter___date }) {
       nodes {
         excerpt(pruneLength: 150)
         frontmatter {

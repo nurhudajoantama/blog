@@ -1,3 +1,4 @@
+const path = require("path");
 const config = require("./config/website");
 require("dotenv").config();
 
@@ -111,6 +112,16 @@ module.exports = {
         start_url: "/",
         background_color: "rgb(29,78,216)",
         theme_color: "rgb(243,244,246)",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-alias-imports",
+      options: {
+        alias: {
+          "@src": path.resolve(__dirname, "src"),
+          "@components": path.resolve(__dirname, "src/components"),
+        },
+        extensions: ["js", "jsx"],
       },
     },
   ],
