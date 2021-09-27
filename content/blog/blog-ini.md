@@ -4,6 +4,7 @@ title: Blog ini
 description: tenttang blog ini
 thumbnail: images/blog-ini.png
 date: 2021-09-03
+isAssignment: false
 ---
 
 <!-- image blog -->

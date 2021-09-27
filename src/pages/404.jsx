@@ -1,7 +1,7 @@
 import React from "react";
-import Header from "../components/header/Header";
-import Footer from "../components/footer/Footer";
-import BodyLayout from "../components/layout/BodyLayout";
+import Header from "@components/header/Header";
+import Footer from "@components/footer/Footer";
+import BodyLayout from "@components/layout/BodyLayout";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export default function NotFoundPage() {

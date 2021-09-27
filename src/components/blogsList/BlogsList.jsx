@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql } from "gatsby";
 import Header from "@components/header/Header";
 import ContentContainerLayout from "@components/layout/ContentContainerLayout";
 import BodyLayout from "@components/layout/BodyLayout";
@@ -28,7 +27,7 @@ function BlogCard({ title, link, thumbnail, excerpt, date }) {
   );
 }
 
-export default function blog({ data }) {
+export default function BlogsList({ data }) {
   const blogs = data.allMdx.nodes;
   return (
     <>
@@ -56,23 +55,3 @@ export default function blog({ data }) {
     </>
   );
 }
-
-export const query = graphql`
-  query BlogsQuery {
-    allMdx(sort: { order: DESC, fields: frontmatter___date }) {
-      nodes {
-        excerpt(pruneLength: 150)
-        frontmatter {
-          title
-          path
-          date(formatString: "DD MMMM YYYY")
-          thumbnail {
-            childImageSharp {
-              gatsbyImageData(placeholder: BLURRED)
-            }
-          }
-        }
-      }
-    }
-  }
-`;

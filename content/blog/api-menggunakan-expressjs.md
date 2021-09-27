@@ -4,10 +4,12 @@ title: API menggunakan ExpressJS
 description: cara membuat API menggunakan ExpressJS
 thumbnail: images/api-menggunakan-express.png
 date: 2021-09-06T12:37:03.413Z
+isAssignment: false
 ---
+
 kali ini saya akan menjelaskan tentang bagaimana cara membuat API dengan ExpressJS
 
-sekarang saya aumsikan bahwa anda sudah mengerti tentang Javascript, NodeJS dan telah menginstall Node dan NPM atau *package manager* apapun pada komputer anda
+sekarang saya aumsikan bahwa anda sudah mengerti tentang Javascript, NodeJS dan telah menginstall Node dan NPM atau _package manager_ apapun pada komputer anda
 
 ##### Daftar Isi
 
@@ -67,7 +69,7 @@ app.METHOD(path, callback [, callback ...])
 
 METHOD yang terdapat pada express diantaranya `js>app.get() app.post() app.put()` dan masih terdapat lagi, anda dapat cek pada [dokumentasi express](https://expressjs.com/ "expressJS")
 
-pada kasus kita kita dapat memberikan `js>app.get()` sehingga pada get *request* kita akan memberikan *respond*-nya
+pada kasus kita kita dapat memberikan `js>app.get()` sehingga pada get _request_ kita akan memberikan _respond_-nya
 
 ```js
 app.get("/", (req, res) => {});
@@ -75,7 +77,7 @@ app.get("/", (req, res) => {});
 
 <h3 id="express-respond">Express Respond</h3>
 
-Pastinya setiap request yang kita kirim kita mengharapkan balasan maka dari itu, pada express terdapat respond. respond pada express dituliskan sebagai *callback* dari request yang kita tulis
+Pastinya setiap request yang kita kirim kita mengharapkan balasan maka dari itu, pada express terdapat respond. respond pada express dituliskan sebagai _callback_ dari request yang kita tulis
 
 ```js
 app.get("/", (req, res) => {
@@ -83,7 +85,7 @@ app.get("/", (req, res) => {
 });
 ```
 
-karena akan membuat *API* maka respond harus berupa *JSON* maka kita dapat menulis `js>res.json()`
+karena akan membuat _API_ maka respond harus berupa _JSON_ maka kita dapat menulis `js>res.json()`
 
 ```js
 app.get("/", (req, res) => {
@@ -99,6 +101,6 @@ lalu jalankan kembali servernya dengan `shell>node server` dan buka pada browser
 
 ![result-express](/assets/result-express-api.png "result-express")
 
-*API* dengan menggunakan expressJS sudah jalan, sekarang anda dapat menambahkan konten atau membuat *API* dengan express, untuk memperdalam pengetahuan anda juga dapat membaca [dokumentasi express](https://expressjs.com/ "expressJS")
+_API_ dengan menggunakan expressJS sudah jalan, sekarang anda dapat menambahkan konten atau membuat _API_ dengan express, untuk memperdalam pengetahuan anda juga dapat membaca [dokumentasi express](https://expressjs.com/ "expressJS")
 
 Sekian dulu. Terimakasih

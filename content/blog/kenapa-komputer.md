@@ -4,6 +4,7 @@ path: kenapa-komputer
 thumbnail: images/kenapa-komputer.png
 description: Tentang diri saya mengapa memilih komputer
 date: 2021-09-02
+isAssignment: false
 ---
 
 Judul dari blog ini mungkin membuat bingung, apa maksud dan tujuan blog post ini?
@@ -26,7 +27,7 @@ Karena saat saya SMP saya tidak memiliki _HP_ , sedangkan saya SMA tidak bersama
 
 Kelas 12 saya mendapatkan laptop pribadi saya sendiri. disaat ini saya juga bingung mau masuk jurusan apa. Memang saya sudah sangat ingin masuk dalam teknik informatika tetapi saat saya lihat teman saya yang lain yang memilih masuk SMK kemampuan dalam pemrogramannya lebih dari saya, juga saya lebih baik di editing daripada di pemrogramman, terlebih saat saya memiliki _HP_ yang kurang bagus dan sering rusak saya dapat memperbaiki, dengan membongkar _HP_ tersebut bermodalkan tontonan dari _Youtube_. Tetapi saya lebih memiliih teknik informatika, selain jurusan ini sudah saya inginkan dari lama, saya juga suak dengan hal-hal yang baru dan menantang bagi saya. Maka dari itu saya mulai belajar banyak tentang pemrograman dan mengejar banyak ketertinggalan agar pemahaman saya lebih daripada mereka.
 
-Sekarang saya sudah mengerti beberapa bahasa pemrograman terutama untuk website seperti _Javascript_, _PHP_, _MySql_, _MongoDB_. saya juga mempelajari tentang _Python_ karena saya juga tertarik dengan _Machine Learning_ dan juga algoritma-algoritma komputer. Saya juga tertarik dengan teknologi seperti _micro services_, maka dari itu saya juga mempelajari tentang _Docker_, dan juga _Kubernetes_. tentunya saya mempelajari _Linux_ untuk mendukung kemampuan komputasi saya.
+Sekarang saya sudah mengerti beberapa bahasa pemrograman terutama untuk website seperti _Javascript_, _Typescript_, _PHP_, _GO_, _SQL_. saya juga mempelajari tentang _Python_ karena saya juga tertarik dengan _Machine Learning_ dan juga algoritma-algoritma komputer. Saya juga tertarik dengan teknologi seperti _micro services_, maka dari itu saya juga mempelajari tentang _Docker_, dan juga _Kubernetes_. tentunya saya mempelajari _Linux_ untuk mendukung kemampuan komputasi saya.
 
 Mungkin cerita saya hanyalah cerita biasa.
 

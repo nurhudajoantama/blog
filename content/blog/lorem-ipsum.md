@@ -4,6 +4,7 @@ path: lorem-ipsum
 thumbnail: images/default.png
 description: Lorem ipsum dolor sit amet consectetur adipisicing elit.
 date: 2021-09-03
+isAssignment: false
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quam ipsa adipisci numquam eligendi totam vitae culpa quasi dignissimos magni! Ab quo molestias aspernatur?

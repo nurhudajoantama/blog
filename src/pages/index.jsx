@@ -1,11 +1,11 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import Footer from "../components/footer/Footer";
-import BodyLayout from "../components/layout/BodyLayout";
-import ContentContainerLayout from "../components/layout/ContentContainerLayout";
-import Navbar from "../components/header/Navbar";
+import Footer from "@components/footer/Footer";
+import BodyLayout from "@components/layout/BodyLayout";
+import ContentContainerLayout from "@components/layout/ContentContainerLayout";
+import Navbar from "@components/header/Navbar";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import SEO from "../components/SEO";
+import SEO from "@components/SEO";
 
 // for quote header
 function Quote() {
@@ -30,11 +30,11 @@ function BlogCardIndex({ link, title, excerpt }) {
   return (
     <div className="my-6 group">
       <AniLink paintDrip to={"/blog/" + link}>
-        <div to={link} className="font-semibold text-lg group-hover:underline">
+        <h3 to={link} className="font-semibold text-lg group-hover:underline">
           {title}
-        </div>
-        <div className="leading-relaxed tracking-wide mt-1">{excerpt}</div>
-        <div className="text-blue-600 hover:underline">more . . .</div>
+        </h3>
+        <p className="leading-relaxed tracking-wide mt-1">{excerpt}</p>
+        <span className="block text-blue-600 hover:underline">more . . .</span>
       </AniLink>
     </div>
   );
