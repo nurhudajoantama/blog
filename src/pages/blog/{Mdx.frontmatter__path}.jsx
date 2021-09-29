@@ -9,7 +9,7 @@ import BodyLayout from "@components/layout/BodyLayout";
 import Footer from "@components/footer/Footer";
 import Breadcrumb from "@components/Breadcrumb";
 import blogComponents from "@components/blog/blogComponents";
-import SEO from "@components/SEO";
+import Seo from "@components/SEO";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -45,7 +45,7 @@ export default class Component extends React.Component {
   render() {
     return (
       <>
-        <SEO
+        <Seo
           frontmatter={this.frontmatter}
           // postImage={this.frontmatter.thumbnail.fluid.src}
           isBlogPost

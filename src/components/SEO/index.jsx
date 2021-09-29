@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import SchemaOrg from "./SchemaOrg";
 
-export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost }) {
+export default function Seo({ postData, frontmatter = {}, postImage, isBlogPost }) {
   const {
     site: { siteMetadata: seo },
   } = useStaticQuery(graphql`
@@ -74,7 +74,7 @@ export default function SEO({ postData, frontmatter = {}, postImage, isBlogPost 
   );
 }
 
-SEO.propTypes = {
+Seo.propTypes = {
   isBlogPost: PropTypes.bool,
   postData: PropTypes.shape({
     childMarkdownRemark: PropTypes.shape({
@@ -85,7 +85,7 @@ SEO.propTypes = {
   postImage: PropTypes.string,
 };
 
-SEO.defaultProps = {
+Seo.defaultProps = {
   isBlogPost: false,
   postData: { childMarkdownRemark: {} },
   postImage: null,
