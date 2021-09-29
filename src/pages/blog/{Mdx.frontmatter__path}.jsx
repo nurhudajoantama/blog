@@ -10,6 +10,9 @@ import Footer from "@components/footer/Footer";
 import Breadcrumb from "@components/Breadcrumb";
 import blogComponents from "@components/blog/blogComponents";
 import Seo from "@components/SEO";
+import { Disqus } from "gatsby-plugin-disqus";
+
+const config = require("../../../config/website");
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -41,6 +44,11 @@ export default class Component extends React.Component {
     super(props);
     this.blog = this.props.data.mdx;
     this.frontmatter = this.blog.frontmatter;
+    this.disqusConfig = {
+      url: `${config.siteUrl}/blog/${this.frontmatter.title}`,
+      identifier: this.blog.id,
+      title: this.frontmatter.title,
+    };
   }
   render() {
     return (
@@ -66,6 +74,9 @@ export default class Component extends React.Component {
                 <ContentBlog body={this.blog.body} />
               </div>
             </ContentContainerLayout>
+            <div className="mt-20 mb-10 max-w-screen-md mx-auto ">
+              <Disqus config={this.disqusConfig} />
+            </div>
           </div>
           <Footer />
         </BodyLayout>
@@ -91,6 +102,7 @@ export const query = graphql`
           }
         }
       }
+      id
       body
     }
   }
