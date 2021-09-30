@@ -6,7 +6,6 @@ import ContentContainerLayout from "@components/layout/ContentContainerLayout";
 import Navbar from "@components/header/Navbar";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Seo from "@components/SEO";
-import { StaticImage } from "gatsby-plugin-image";
 
 // for quote header
 function Quote() {
@@ -72,26 +71,6 @@ function BodyLatestBlog() {
   );
 }
 
-function GunadarmaLinks() {
-  return (
-    <div className="max-w-screen-md mx-auto mt-10 mb-20" id="gunadarma-links">
-      <h1 className="text-2xl font-bold mx-2 text-center md:text-left">Gunadarma Links</h1>
-      <hr />
-      <div className="mt-3 flex justify-center md:justify-evenly flex-wrap">
-        <a title="Gunadarma Homepage" className="m-5 w-40 overflow-hidden shadow rounded-xl hover:shadow-lg" href="https://gunadarma.ac.id" target="_blank" rel="noreferrer">
-          <StaticImage className="object-fill" src="../images/gunadarma_logo.png" />
-        </a>
-        <a title="LePKoM Gunadarma" className="m-5 w-40 overflow-hidden rounded-xl shadow hover:shadow-lg" href="https://vm.lepkom.gunadarma.ac.id/" target="_blank" rel="noreferrer">
-          <StaticImage className="object-fill" src="../images/lepkom_gunadarma_logo.png" />
-        </a>
-        <a title="Labti Gunadarma" className="m-5 w-40 overflow-hidden rounded-xl shadow hover:shadow-lg" href="http://ti.lab.gunadarma.ac.id/" target="_blank" rel="noreferrer">
-          <StaticImage className="object-fill" src="../images/labti_gunadarma_logo.png" />
-        </a>
-      </div>
-    </div>
-  );
-}
-
 export default function index() {
   return (
     <>
@@ -103,7 +82,6 @@ export default function index() {
           <Quote />
         </div>
         <BodyLatestBlog />
-        <GunadarmaLinks />
         <Footer />
       </BodyLayout>
     </>
