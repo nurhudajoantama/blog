@@ -104,10 +104,5 @@ export const query = graphql`
       id
       body
     }
-    site {
-      siteMetadata {
-        siteUrl
-      }
-    }
   }
 `;
