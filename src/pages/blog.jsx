@@ -7,7 +7,7 @@ import Footer from "@components/footer/Footer";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Breadcrumb from "@components/Breadcrumb";
-import SEO from "@components/SEO";
+import Seo from "@components/SEO";
 
 function BlogCard({ title, link, thumbnail, excerpt, date }) {
   return (
@@ -18,7 +18,7 @@ function BlogCard({ title, link, thumbnail, excerpt, date }) {
           {/* <img className="object-center object-cover h-auto w-full " src="/assets/screenshot-271-.png" alt="test" /> */}
         </div>
         <div className="mx-2 p-3">
-          <div className="font-semibold text-lg mb-1 group-hover:underline">{title}</div>
+          <div className="font-semibold text-lg mb-1 group-hover:text-blue-500">{title}</div>
           <div className="text-sm text-gray-500 mb-1">{date}</div>
           <div>{excerpt}</div>
           <div className="text-blue-600 hover:underline">more . . .</div>
@@ -32,7 +32,7 @@ export default function blog({ data }) {
   const blogs = data.allMdx.nodes;
   return (
     <>
-      <SEO />
+      <Seo />
       <BodyLayout>
         <Header />
         <div className="my-10">
@@ -42,7 +42,7 @@ export default function blog({ data }) {
               <AniLink paintDrip to="/blog" className="font-semibold text-2xl tracking-wider">
                 Blog
               </AniLink>
-              <AniLink paintDrip to="/blog/tugas" className="text-md text-gray-700 hover:underline">
+              <AniLink paintDrip to="/blog/tugas" className="text-md text-gray-700 hover:text-blue-500">
                 Blog Tugas
               </AniLink>
             </div>

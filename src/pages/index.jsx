@@ -1,11 +1,12 @@
 import React from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import Footer from "@components/footer/Footer";
 import BodyLayout from "@components/layout/BodyLayout";
 import ContentContainerLayout from "@components/layout/ContentContainerLayout";
 import Navbar from "@components/header/Navbar";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import SEO from "@components/SEO";
+import Seo from "@components/SEO";
+import { StaticImage } from "gatsby-plugin-image";
 
 // for quote header
 function Quote() {
@@ -30,7 +31,7 @@ function BlogCardIndex({ link, title, excerpt }) {
   return (
     <div className="my-6 group">
       <AniLink paintDrip to={"/blog/" + link}>
-        <h3 to={link} className="font-semibold text-lg group-hover:underline">
+        <h3 to={link} className="font-semibold text-lg group-hover:text-blue-500">
           {title}
         </h3>
         <p className="leading-relaxed tracking-wide mt-1">{excerpt}</p>
@@ -58,9 +59,9 @@ function BodyLatestBlog() {
   return (
     <div className="relative -top-10 ">
       <ContentContainerLayout>
-        <Link to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
+        <AniLink to="/blog" className="mb-5 font-semibold text-2xl tracking-wider">
           Latest Blog
-        </Link>
+        </AniLink>
         <div>
           {latestBlogs.map((blog, index) => (
             <BlogCardIndex title={blog.frontmatter.title} excerpt={blog.excerpt} link={blog.frontmatter.path} key={index} />
@@ -71,10 +72,30 @@ function BodyLatestBlog() {
   );
 }
 
+function GunadarmaLinks() {
+  return (
+    <div className="max-w-screen-md mx-auto mt-10 mb-20" id="gunadarma-links">
+      <h1 className="text-2xl font-bold mx-2 text-center md:text-left">Gunadarma Links</h1>
+      <hr />
+      <div className="mt-3 flex justify-center md:justify-evenly flex-wrap">
+        <a title="Gunadarma Homepage" className="m-5 w-40 overflow-hidden shadow rounded-xl hover:shadow-lg" href="https://gunadarma.ac.id" target="_blank" rel="noreferrer">
+          <StaticImage className="object-fill" src="../images/gunadarma_logo.png" />
+        </a>
+        <a title="LePKoM Gunadarma" className="m-5 w-40 overflow-hidden rounded-xl shadow hover:shadow-lg" href="https://vm.lepkom.gunadarma.ac.id/" target="_blank" rel="noreferrer">
+          <StaticImage className="object-fill" src="../images/lepkom_gunadarma_logo.png" />
+        </a>
+        <a title="Labti Gunadarma" className="m-5 w-40 overflow-hidden rounded-xl shadow hover:shadow-lg" href="http://ti.lab.gunadarma.ac.id/" target="_blank" rel="noreferrer">
+          <StaticImage className="object-fill" src="../images/labti_gunadarma_logo.png" />
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function index() {
   return (
     <>
-      <SEO />
+      <Seo />
       <BodyLayout>
         {/* header */}
         <div className="w-full bg-blue-700 pb-10">
@@ -82,6 +103,7 @@ export default function index() {
           <Quote />
         </div>
         <BodyLatestBlog />
+        <GunadarmaLinks />
         <Footer />
       </BodyLayout>
     </>

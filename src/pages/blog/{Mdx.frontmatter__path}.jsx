@@ -9,7 +9,9 @@ import BodyLayout from "@components/layout/BodyLayout";
 import Footer from "@components/footer/Footer";
 import Breadcrumb from "@components/Breadcrumb";
 import blogComponents from "@components/blog/blogComponents";
-import SEO from "@components/SEO";
+import Seo from "@components/SEO";
+import { Disqus } from "gatsby-plugin-disqus";
+import { siteUrl } from "../../../config/website";
 
 function Thumbnail({ thumbnail, alt }) {
   return (
@@ -41,11 +43,16 @@ export default class Component extends React.Component {
     super(props);
     this.blog = this.props.data.mdx;
     this.frontmatter = this.blog.frontmatter;
+    this.disqusConfig = {
+      url: `${siteUrl}/blog/${this.frontmatter.path}`,
+      identifier: this.blog.id,
+      title: this.frontmatter.title,
+    };
   }
   render() {
     return (
       <>
-        <SEO
+        <Seo
           frontmatter={this.frontmatter}
           // postImage={this.frontmatter.thumbnail.fluid.src}
           isBlogPost
@@ -66,6 +73,9 @@ export default class Component extends React.Component {
                 <ContentBlog body={this.blog.body} />
               </div>
             </ContentContainerLayout>
+            <div className="mt-20 mb-10 max-w-screen-md mx-auto ">
+              <Disqus config={this.disqusConfig} />
+            </div>
           </div>
           <Footer />
         </BodyLayout>
@@ -91,7 +101,13 @@ export const query = graphql`
           }
         }
       }
+      id
       body
+    }
+    site {
+      siteMetadata {
+        siteUrl
+      }
     }
   }
 `;

@@ -6,7 +6,7 @@ import Footer from "@components/footer/Footer";
 import { GatsbyImage } from "gatsby-plugin-image";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Breadcrumb from "@components/Breadcrumb";
-import SEO from "@components/SEO";
+import Seo from "@components/SEO";
 
 function BlogCard({ title, link, thumbnail, excerpt, date }) {
   return (
@@ -31,7 +31,7 @@ export default function BlogsList({ data }) {
   const blogs = data.allMdx.nodes;
   return (
     <>
-      <SEO />
+      <Seo />
       <BodyLayout>
         <Header />
         <div className="my-10">

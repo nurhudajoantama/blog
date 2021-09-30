@@ -118,10 +118,17 @@ module.exports = {
       resolve: "gatsby-plugin-alias-imports",
       options: {
         alias: {
+          "@root": path.resolve(__dirname),
           "@src": path.resolve(__dirname, "src"),
           "@components": path.resolve(__dirname, "src/components"),
         },
         extensions: ["js", "jsx"],
+      },
+    },
+    {
+      resolve: "gatsby-plugin-disqus",
+      options: {
+        shortname: "nurhudajoantama",
       },
     },
   ],
