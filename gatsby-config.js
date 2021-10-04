@@ -50,6 +50,26 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-remark`,
+    // SEARCH
+    {
+      resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
+      options: {
+        // Fields to index
+        fields: [`title`, `tags`],
+        // How to resolve each field`s value for a supported node type
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields` values
+          MarkdownRemark: {
+            title: (node) => node.frontmatter.title,
+            tags: (node) => node.frontmatter.tags,
+            path: (node) => node.frontmatter.path,
+          },
+        },
+        // Optional filter to limit indexed nodes
+        // filter: (node, getNode) => node.frontmatter.tags !== "exempt",
+      },
+    },
     // query blog
     {
       resolve: "gatsby-source-filesystem",
