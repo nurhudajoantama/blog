@@ -6,8 +6,8 @@ thumbnail: images/blog-ini.png
 date: 2021-09-03
 isAssignment: false
 tags:
-  - tag: test2
-  - tag: test
+  - test1
+  - test2
 ---
 
 <!-- image blog -->
