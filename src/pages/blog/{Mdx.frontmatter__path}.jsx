@@ -17,7 +17,7 @@ function Thumbnail({ thumbnail, alt }) {
   return (
     <>
       {thumbnail ? (
-        <div className="mb-10">
+        <div className="mb-7">
           <GatsbyImage image={thumbnail.childImageSharp.gatsbyImageData} className="w-full h-auto" alt={alt} />
           <div className="text-sm text-gray-500">{alt}</div>
         </div>
@@ -38,11 +38,26 @@ function ContentBlog({ body }) {
   );
 }
 
+function Tags({ tags }) {
+  return (
+    <div className="mb-2 flex flex-wrap">
+      {tags
+        ? tags.map((tag, index) => (
+            <div className="mr-2 mb-1 px-2 py-.5 bg-gray-700 text-white text-sm rounded-sm" key={index}>
+              {tag}
+            </div>
+          ))
+        : ""}
+    </div>
+  );
+}
+
 export default class Component extends React.Component {
   constructor(props) {
     super(props);
     this.blog = this.props.data.mdx;
     this.frontmatter = this.blog.frontmatter;
+    // for comment on blog
     this.disqusConfig = {
       url: `${siteUrl}/blog/${this.frontmatter.path}`,
       identifier: this.blog.id,
@@ -71,6 +86,8 @@ export default class Component extends React.Component {
                 <Thumbnail thumbnail={this.frontmatter.thumbnail} alt={this.frontmatter.title} />
                 {/* Body */}
                 <ContentBlog body={this.blog.body} />
+                {/* Tags */}
+                <Tags tags={this.frontmatter.tags} />
               </div>
             </ContentContainerLayout>
             <div className="mt-20 mb-10 max-w-screen-md mx-auto ">
@@ -92,6 +109,7 @@ export const query = graphql`
         title
         path
         description
+        tags
         thumbnail {
           childImageSharp {
             gatsbyImageData(placeholder: BLURRED)

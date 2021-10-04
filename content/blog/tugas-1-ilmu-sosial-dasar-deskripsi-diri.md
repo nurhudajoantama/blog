@@ -7,8 +7,9 @@ tags:
   - ilsos
   - gunadarma
 thumbnail: images/tugas-1-ilsos-thumb.png
-date: 2021-10-04T14:22:09.305Z
+date: 2021-10-04T21:46:09.305Z
 ---
+
 Nama saya Nurhuda Joantama Putra, saya lahir di Jakarta pada 14 Agustus 2003. Saya anak pertama dari tiga bersaudara. Sekarang saya sedang berada di jenjang pendidikan S1 di Universitas Gunadarma, sebelumnya saya sudah melewati tahapan-tahapan pendidikan saya pendidikan terakhir saya adalah SMA tepatnya di SMAN 15 Jakarta. Jika ingin mengetahui kenapa saya memilih komputer dan beberapa perjalanan saya, saya sudah menulisnya di blog yang berjudul "Kenapa Komputer ?". Pada blog ini saya hanya akan mendeskripsikan tentang diri saya di rumah, di lingkungan masyarakat, dan di lingkungan kampus.
 
 Saya adalah orang yang senang dengan hal-hal yang baru. Sehingga saya sangat semangat dalam mempelajari atau mendalami sesuatu yang baru. Tetapi, jika menurut saya, yang saya pelajari itu kurang menarik bagi saya saya akan sangat cepat merasa bosan, apalagi jika memang itu bukan sesuatu yang saya senangi. Dalam mempelajari atau memeahami sesuatu saya dapat dibilang cepat. Namun terkadang saya harus mendalami suatu materi untuk mencari cara terbaik menurut saya sehingga saya dapat mengingat suatu materi dengan baik.
@@ -19,7 +20,7 @@ Saya adalah anak pertama laki-laki dalam keluarga saya. Sehingga saya harus beru
 
 Karena saya yang introvert dan kurang pandai dalam bersosialisasi dengan orang yang belum dikenal. Tetapi, karena saya mampu memahami sesuatu dengan cepat, saya dapat berkomunikasi dengan baik dengan orang lain. Saya hanya mempunyai beberapa teman dekat, tetapi saat saya sudah merasa dekat dengan orang tersebut saya akan menjadi orang yang bisa dibilang memiliki sifat ekstrovert. Saya lebih senang jika saya hanya berada dibalik layar, walaupun saya juga senang jika saya diakui atau dikenal oleh orang lain.
 
-Pada paragraf sebelumnya sudah dijelaskan bahwa saya orangnya lebih memilih hanya dibalik layar, sehingga dalam dunia pendidikan terutama yang sudah saya lalui, saya sering hanya memperhatikan saat guru sedang menjelaskan dan mencari kekurangannya di media lain seperti buku atau internet. Dalam lingkungan kampus saat ini, saya berusaha untuk menghilangkan sikap-sikap atau sifat-sifat saya yang buruk dan sudah menjadi kebiasaan itu. Saya juga mencoba untuk mencari lebih banyak teman dan *networking*
+Pada paragraf sebelumnya sudah dijelaskan bahwa saya orangnya lebih memilih hanya dibalik layar, sehingga dalam dunia pendidikan terutama yang sudah saya lalui, saya sering hanya memperhatikan saat guru sedang menjelaskan dan mencari kekurangannya di media lain seperti buku atau internet. Dalam lingkungan kampus saat ini, saya berusaha untuk menghilangkan sikap-sikap atau sifat-sifat saya yang buruk dan sudah menjadi kebiasaan itu. Saya juga mencoba untuk mencari lebih banyak teman dan _networking_
 dalam dunia kampus yang saya akan lalui ini.
 
 Sekian dan terimakasih
