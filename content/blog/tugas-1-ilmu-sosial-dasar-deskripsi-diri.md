@@ -1,6 +1,6 @@
 ---
-path: Tugas 1 Ilmu Sosial Dasar Deskripsi Diri
-title: tugas-1-ilmu-sosial-dasar-deskripsi-diri
+path: tugas-1-ilmu-sosial-dasar-deskripsi-diri
+title: Tugas 1 Ilmu Sosial Dasar Deskripsi Diri
 description: Tugas 1 Ilmu Sosial Dasar Deskripsi Diri
 tags:
   - tugas
