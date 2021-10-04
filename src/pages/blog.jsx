@@ -88,7 +88,7 @@ export default class Blog extends Component {
             {/* <Search searchIndex={data.siteSearchIndex.index} /> */}
             <div className="max-w-screen-md mx-auto px-3 mb-10">
               <label htmlFor="blog-search">Search</label>
-              <input id="blog-search" type="text" className="w-full p-2 outline-none" value={this.state.query} onChange={this.search} placeholder="Search . . ." autoComplete="search" />
+              <input id="blog-search" type="text" className="w-full p-2 outline-none" value={this.state.query} onChange={this.search} placeholder="Search . . ." />
               <div className="flex justify-between align-baseline mb-5 mx-2">
                 <span className="block text-sm text-gray-400">Search title and tags. Ex. tugas</span>
                 <span className=" block text-sm text-gray-400">Elasticlunr</span>
