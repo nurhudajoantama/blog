@@ -4,7 +4,10 @@ title: Mencari Pi dengan Javascript MenggunakanMetode Monte Carlo
 description: Mencari Pi dengan Javascript MenggunakanMetode Monte Carlo
 thumbnail: images/circle-pi-thumb.png
 date: 2021-09-15T09:03:19.649Z
-isAssignment: false
+tags:
+  - tech
+  - javascript
+  - coding
 ---
 
 Kita tau, kita dapat mencari luas atau keliling lingkaran dengan pi (<span>&#8508;</span>), tapi sebenarnya tau tidak sih darimana asalnya bilangan yang disebut phi atau pi itu.

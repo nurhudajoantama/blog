@@ -16,7 +16,11 @@ collections:
       - { name: path, label: Path }
       - { name: title, label: Title }
       - { name: description, label: Description }
-      - { name: isAssignment, label: Assignment, widget: boolean, default: false }
+      # - { name: isAssignment, label: Assignment, widget: boolean, default: false }
+      - name: tags
+        label: Tags
+        widget: list
+        field: { label: Tag, name: tag, widget: string }
       - { name: thumbnail, label: Featured Image, widget: image, media_folder: images, required: false }
       - { name: date, label: Date, widget: datetime }
       - { name: body, label: Body, widget: markdown }

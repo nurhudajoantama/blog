@@ -4,7 +4,9 @@ path: kenapa-komputer
 thumbnail: images/kenapa-komputer.png
 description: Tentang diri saya mengapa memilih komputer
 date: 2021-09-02
-isAssignment: false
+tags:
+  - tech
+  - intro
 ---
 
 Judul dari blog ini mungkin membuat bingung, apa maksud dan tujuan blog post ini?

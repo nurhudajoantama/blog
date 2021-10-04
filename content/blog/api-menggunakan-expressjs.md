@@ -4,7 +4,10 @@ title: API menggunakan ExpressJS
 description: cara membuat API menggunakan ExpressJS
 thumbnail: images/api-menggunakan-express.png
 date: 2021-09-06T12:37:03.413Z
-isAssignment: false
+tags:
+  - tech
+  - javascript
+  - coding
 ---
 
 kali ini saya akan menjelaskan tentang bagaimana cara membuat API dengan ExpressJS
